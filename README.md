@@ -1,4 +1,4 @@
-## 1. Description
+## 1. 📋 Description
     Wibe code Among Us plugin maded for fun ( or not 🤔 )
       This plugin was maded with Reactor.Template
 ## Content
@@ -10,14 +10,14 @@
 
     4.Instruction for reactor template install
 
-## 2. Installing 
+## 2. 🔧 Installing 
     Idk when, bun soon ( very very )
 
-## 3. Requirements for run this mod
+## 3. 🎯 Requirements for run this mod
 >     [Requires]
 > The mod needs [BepInEx](https://builds.bepinex.dev/projects/bepinex_be) and [Reactor](https://github.com/nuclearpowered/reactor) to work properly. While **BepInEx** is used by every mod and shouldn't be a problem, without **Reactor** you can't launch the mod.
 
-## 4. Instruction for reactor template 
+## 4. 🚀 Instruction for reactor template 
 > [Installing]
 > 1. Follow this link [Reactor.Template](https://docs.reactor.gg/quick_start/install_netsdk_template#install-the-mod-template) if u not dumbasshole
 > 2. or...
