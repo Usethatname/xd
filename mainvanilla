@@ -33,7 +33,7 @@ public class InvalidMessageError
             // Создаем неправильное сообщение
             byte[] invalidMessage = new byte[] { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A };
 
-            // Отправляем неправильное сообщение
+            // Отправляем неправильное сообщение (InnerNetClient не существует lol)
             InnerNet.InnerNetClient.instance.SendMessage(invalidMessage, 0, invalidMessage.Length);
         }
     }
