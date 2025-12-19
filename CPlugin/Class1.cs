@@ -11,8 +11,8 @@ namespace AmongUsLagMod
     [BepInPlugin(id, plugin_name, versionString)]
     public class Plugin : BasePlugin
     {
-        public const string id = "com.yourname.amonguslagmod";
-        public const string plugin_name = "Among Us Lag Mod";
+        public const string id = "com.xd.sah_mod";
+        public const string plugin_name = "shittyasshole_mod";
         public const string versionString = "1.0.0";
 
         private readonly Harmony harmony = new Harmony(id);
