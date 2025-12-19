@@ -8,20 +8,20 @@ using UnityEngine;
 
 namespace AmongUsLagMod
 {
-    [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
+    [BepInPlugin(id, plugin_name, versionString)]
     public class Plugin : BasePlugin
     {
-        public const string PLUGIN_GUID = "com.yourname.amonguslagmod";
-        public const string PLUGIN_NAME = "Among Us Lag Mod";
-        public const string PLUGIN_VERSION = "1.0.0";
+        public const string id = "com.yourname.amonguslagmod";
+        public const string plugin_name = "Among Us Lag Mod";
+        public const string versionString = "1.0.0";
 
-        private readonly Harmony harmony = new Harmony(PLUGIN_GUID);
+        private readonly Harmony harmony = new Harmony(id);
 
         public static bool IsLagEnabled = false;
 
         public override void Load()
         {
-            Log.LogInfo($"Плагин {PLUGIN_NAME} загружен!");
+            Log.LogInfo($"Плагин {plugin_name} загружен!");
 
             harmony.PatchAll();
             
@@ -40,7 +40,7 @@ namespace AmongUsLagMod
         public override void Unload()
         {
             harmony.UnpatchSelf();
-            Log.LogInfo($"Плагин {PLUGIN_NAME} выгружен.");
+            Log.LogInfo($"Плагин {plugin_name} выгружен.");
             base.Unload();
         }
     }
