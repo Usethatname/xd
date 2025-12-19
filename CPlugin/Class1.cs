@@ -1,5 +1,6 @@
 using BepInEx;
 using BepInEx.Logging;
+using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using System;
 using AmongUs.GameOptions;
@@ -25,18 +26,6 @@ namespace AmongUsLagMod
 
             harmony.PatchAll();
             
-            if (InputManager.Exists)
-            {
-                InputManager.Instance.AddKeyDownAction(KeyCode.L, () => {
-                    IsLagEnabled = !IsLagEnabled;
-                    Log.LogInfo($"Режим зависания: {(IsLagEnabled ? "ВКЛ" : "ВЫКЛ")}");
-                });
-            }
-            else
-            {
-                Log.LogWarning("InputManager не найден. Управление с клавиатуры не будет работать.");
-            }
-        }
         public override void Unload()
         {
             harmony.UnpatchSelf();
@@ -71,4 +60,13 @@ namespace AmongUsLagMod
             return false;
         }
     }
+    
+void Update(){
+
+    if (Input.GetKeyDown(KeyCode.L))
+    {
+        IsLagEnabled = !IsLagEnabled;
+    }
+}
+
 }
