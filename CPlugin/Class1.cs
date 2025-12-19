@@ -7,7 +7,7 @@ using AmongUs.GameOptions;
 using Hazel;
 using UnityEngine;
 
-namespace AmongUsLagMod
+namespace CPlugin
 {
     [BepInPlugin(id, plugin_name, versionString)]
     public class Plugin : BasePlugin
@@ -69,4 +69,5 @@ void Update(){
     }
 }
 
+}
 }
