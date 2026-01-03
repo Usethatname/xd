@@ -35,8 +35,13 @@ namespace CPlugin
 
             if (Input.GetKey(KeyCode.F1))
             {
-
-                PlayerControl.LocalPlayer.RpcSetName("sosun");
+                // баг с object null reference, надо будет потом пофиксить
+                foreach (var item in PlayerControl.AllPlayerControls)
+                {
+                    MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(PlayerControl.LocalPlayer.NetId, (byte)RpcCalls.Exiled, SendOption.Reliable, AmongUsClient.Instance.GetClientIdFromCharacter(item));
+                    writer.Write(false);
+                    AmongUsClient.Instance.FinishRpcImmediately(writer);
+                }
                 
             }
         }
