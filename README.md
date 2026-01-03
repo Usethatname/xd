@@ -5,3 +5,4 @@ Plans:
   4. create options for rebind features
   5. something else idk will see in the future
   6. dont forget about it all as well as practise with harmony patchers
+  БЛЯТЬ ОНО ОВЕРЛОАДИТ МОБИЛКИ И КЛИЕНТ СУКА
