@@ -24,7 +24,7 @@ namespace CPlugin
 
             harmony.PatchAll();
         }
-// реализация пачта на нажатие клавиши
+// реализация пачта(k diddy i hear yu,патча.) на нажатие клавиши
     [HarmonyPatch(typeof(PlayerControl), "FixedUpdate")]
     public static class PlayerControl_FixedUpdatePatch
     {
